@@ -8,9 +8,9 @@
  echo "Nama saya <strong>$nama</strong>, saya berusia $umur tahun. <br>";
 
  $namaadik = "Hana";
- $umuradik = 12;
+ $umuradik = 13;
 
- 
+
  echo "Nama adik saya <strong>$namaadik</strong>, adik saya berusia $umuradik tahun.<br>";
 
  $selisihumur = $umur - $umuradik;
