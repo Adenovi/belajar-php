@@ -10,6 +10,7 @@
  $namaadik = "Hana";
  $umuradik = 12;
 
+ 
  echo "Nama adik saya <strong>$namaadik</strong>, adik saya berusia $umuradik tahun.<br>";
 
  $selisihumur = $umur - $umuradik;
