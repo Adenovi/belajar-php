@@ -8,7 +8,7 @@ if (isset($_GET['p']))  {
         echo $_POST['password'];
 
     } else if ($_GET['p'] == "pesan") { //ada pesannya
-        echo "Halo Apa kabar".$_POST ['nama'];
+        echo "Halo apa kabar".$_POST ['nama'];
         echo "<br/>";
         echo "password anda adalah ".$_POST['password'];
 
