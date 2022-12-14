@@ -1,12 +1,12 @@
 <?php
 // membuat koneksi database
-$con = mysql_connect("localhost","root","fakultas");
+$con = mysqli_connect("localhost","root","fakultas");
 
 //mengecek koneksi mysql
-if(mysql_connect_error())|{
-    echo "koneksi gagal". mysql_connect_error();
+if(mysqli_connect_errno())|{
+    echo "koneksi gagal". mysqli_connect_error();
 }else{
-    echo "koneksi berhasil"
+    echo "koneksi berhasil";
 }
 
 //membaca data dari tabel mysql
@@ -17,14 +17,14 @@ $result = mysql_query($con, $query);
 $mahasiswa = [];
 if ($result){
     //menampilkan data
-    while($row = mysql_fetch_assoc($result)){
+    while($row = mysqli_fetch_assoc($result)){
         $mahasiswa [] = $row;
     }
-    mysql_free_result($result);
+    mysqli_free_result($result);
 }
 
 //menutup koneksi mysql
-mysql_close($con);
+mysqli_close($con);
 foreach($mahasiswa as $value){
     echo $value["nama"];
 }
